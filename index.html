@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <h1>Play rock, paper, scissors in the console of this site!</h1>
+    <script>
+        //1 is rock
+        //2 is paper
+        //3 is scissors
+        let userDecision = prompt("Enter rock, paper, or scissors") 
+        let compDecision = Math.floor(Math.random * 4) + 1
+        
+        if (compDecision.toLowerCase == 1) {
+            if(userDecision.toLowerCase == rock) {
+                console.log("Draw")
+            } else if (userDecision.toLowerCase == paper) {
+                console.log("You win")
+            } else if (userDecision.toLowerCase == sscissors) {
+                console.log("You lose")
+            } else {
+                console.log("That is not a valid input")
+            }
+        } else if (compDecision.toLowerCase == 2) {
+            if(userDecision.toLowerCase == rock) {
+                console.log("You lose")
+            } else if (userDecision.toLowerCase == paper) {
+                console.log("Draw")
+            } else if (userDecision.toLowerCase == sscissors) {
+                console.log("You win")
+            } else {
+                console.log("That is not a valid input")
+            }
+
+        } else if (compDecision.toLowerCase == 3) {
+            if(userDecision.toLowerCase == rock) {
+                console.log("You win")
+            } else if (userDecision.toLowerCase == paper) {
+                console.log("You lose")
+            } else if (userDecision.toLowerCase == sscissors) {
+                console.log("Draw")
+            } else {
+                console.log("That is not a valid input")
+            }
+        }
+    </script>
+</body>
+</html>
