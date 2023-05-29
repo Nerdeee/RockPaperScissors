@@ -13,35 +13,35 @@
         //2 is paper
         //3 is scissors
         let userDecision = prompt("Enter rock, paper, or scissors") 
-        let compDecision = Math.floor(Math.random * 4) + 1
-        
-        if (compDecision.toLowerCase == 1) {
-            if(userDecision.toLowerCase == rock) {
+        let compDecision = Math.floor(Math.random() * 3) + 1
+        console.log("CPU: " + compDecision);
+        if (compDecision == 1) {
+            if(userDecision.toLowerCase() == "rock") {
                 console.log("Draw")
-            } else if (userDecision.toLowerCase == paper) {
+            } else if (userDecision.toLowerCase() == "paper") {
                 console.log("You win")
-            } else if (userDecision.toLowerCase == sscissors) {
+            } else if (userDecision.toLowerCase() == "scissors") {
                 console.log("You lose")
             } else {
                 console.log("That is not a valid input")
             }
-        } else if (compDecision.toLowerCase == 2) {
-            if(userDecision.toLowerCase == rock) {
+        } else if (compDecision == 2) {
+            if(userDecision.toLowerCase() == "rock") {
                 console.log("You lose")
-            } else if (userDecision.toLowerCase == paper) {
+            } else if (userDecision.toLowerCase() == "paper") {
                 console.log("Draw")
-            } else if (userDecision.toLowerCase == sscissors) {
+            } else if (userDecision.toLowerCase() == "scissors") {
                 console.log("You win")
             } else {
                 console.log("That is not a valid input")
             }
 
-        } else if (compDecision.toLowerCase == 3) {
-            if(userDecision.toLowerCase == rock) {
+        } else if (compDecision == 3) {         
+            if(userDecision.toLowerCase() == "rock") {
                 console.log("You win")
-            } else if (userDecision.toLowerCase == paper) {
+            } else if (userDecision.toLowerCase() == "paper") {
                 console.log("You lose")
-            } else if (userDecision.toLowerCase == sscissors) {
+            } else if (userDecision.toLowerCase() == "scissors") {
                 console.log("Draw")
             } else {
                 console.log("That is not a valid input")
